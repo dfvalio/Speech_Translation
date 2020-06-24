@@ -20,10 +20,15 @@ Apply the following scripts in the order presented here.
   8.	For each pair of suffix change identified in step 5, use the following scripts to generate noise (here the scrips concern the change "a" to "ā"):
   
   a.	Analysis of Part-of-Speech changes when suffix change happens in ASR: POS_noise_analysis_a_along.py
+  
   b.	Generation of sentences containing noise (without vocabulary check): Noise_adding_a_along.py
-        i.	In list_POS, there must be the list of allowed POS identified in step 8.a (first column of the file Result_same_POS1_a_along.txt)
-        ii.	For new_rand, the value for the condition (line 135) is defined by the ratio of the number of occurrences of this suffix changes and the total number of suffix changes. 
+  
+   i.	In list_POS, there must be the list of allowed POS identified in step 8.a (first column of the file Result_same_POS1_a_along.txt)
+   
+   ii.	For new_rand, the value for the condition (line 135) is defined by the ratio of the number of occurrences of this suffix changes and the total number of suffix changes. 
   
   c.	Generation of sentences containing noise (with vocabulary check): Noise_adding_a_along_with_vocab_check.py
-       i.	In list_POS, there must be the list of allowed POS identified in step 8.a (first column of the file Result_same_POS1_a_along.txt)
-       ii.	For new_rand, the value for the condition (line 135) is defined by the ratio of the number of occurrences of this suffix changes and the total number of suffix changes.
+   
+   i.	In list_POS, there must be the list of allowed POS identified in step 8.a (first column of the file Result_same_POS1_a_along.txt)
+   
+   ii.	For new_rand, the value for the condition (line 135) is defined by the ratio of the number of occurrences of this suffix changes and the total number of suffix changes.
